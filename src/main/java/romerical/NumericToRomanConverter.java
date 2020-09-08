@@ -19,7 +19,7 @@ public class NumericToRomanConverter {
             numericValue-=1000;
         }
         if(numericValue>899){
-            result.append(C).append(M);
+            result.append(CM);
             numericValue-=900;
         }
         if(numericValue>=500){
@@ -27,7 +27,7 @@ public class NumericToRomanConverter {
             numericValue-=500;
         }
         if(numericValue>399){
-            result.append(C).append(D);
+            result.append(CD);
             numericValue-=400;
         }
         while(numericValue>99){
@@ -35,7 +35,7 @@ public class NumericToRomanConverter {
             numericValue-=100;
         }
         if(numericValue>89){
-            result.append(X).append(C);
+            result.append(XC);
             numericValue-=90;
         }
         if(numericValue>=50){
@@ -43,7 +43,7 @@ public class NumericToRomanConverter {
             numericValue-=50;
         }
         if(numericValue>39){
-            result.append(X).append(L);
+            result.append(XL);
             numericValue-=40;
         }
         while(numericValue>9){
@@ -51,7 +51,7 @@ public class NumericToRomanConverter {
             numericValue-=10;
         }
         if(numericValue==9){
-            result.append(I).append(X);
+            result.append(IX);
             return result.toString();
         }
         if(numericValue>=5){
@@ -59,7 +59,7 @@ public class NumericToRomanConverter {
             numericValue-=5;
         }
         if(numericValue>3){
-            result.append(I).append(V);
+            result.append(IV);
             numericValue-=4;
         }
         while(numericValue>0){
