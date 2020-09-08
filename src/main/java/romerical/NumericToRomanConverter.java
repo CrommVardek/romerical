@@ -22,7 +22,7 @@ public class NumericToRomanConverter {
             result.append(C).append(M);
             numericValue-=900;
         }
-        if(numericValue>500){
+        if(numericValue>=500){
             result.append(D);
             numericValue-=500;
         }
@@ -38,7 +38,7 @@ public class NumericToRomanConverter {
             result.append(X).append(C);
             numericValue-=90;
         }
-        if(numericValue>50){
+        if(numericValue>=50){
             result.append(L);
             numericValue-=50;
         }
@@ -54,7 +54,7 @@ public class NumericToRomanConverter {
             result.append(I).append(X);
             return result.toString();
         }
-        if(numericValue>5){
+        if(numericValue>=5){
             result.append(V);
             numericValue-=5;
         }

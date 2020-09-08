@@ -21,7 +21,11 @@ public class NumericToRomanConverterTest {
 
     @Parameterized.Parameters
     public static Collection input() {
-        return Arrays.asList(new Object[][]{{1, "I"},{2, "II"},{4, "IV"},{9, "IX"},{99, "XCIX"}});
+        return Arrays.asList(new Object[][]{
+                {1, "I"},{2, "II"},{4, "IV"},{9, "IX"},
+                {10, "X"},{25, "XXV"},{49, "XLIX"},{50, "L"},{99, "XCIX"},
+                {999, "CMXCIX"},{1001, "MI"},{2010, "MMX"},{555, "DLV"}
+        });
     }
 
     @Test(expected = IllegalArgumentException.class)
