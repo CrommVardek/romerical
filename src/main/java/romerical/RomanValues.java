@@ -1,6 +1,6 @@
 package romerical;
 
-public class RomanValues {
+class RomanValues {
 
     protected static final String I = "I";
     protected static final String IV = "IV";

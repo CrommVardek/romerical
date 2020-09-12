@@ -34,4 +34,11 @@ public class RomanToNumericConverterTest {
         Assert.assertEquals(converted, result);
     }
 
+    @Test(expected = NotARomanNumberException.class)
+    public void shouldThrowNotARomanNumberExceptionOnNonRomanNumbers(){
+        String notARomanNumber = "IIII";
+
+        RomanToNumericConverter.toNumeric(notARomanNumber);
+    }
+
 }

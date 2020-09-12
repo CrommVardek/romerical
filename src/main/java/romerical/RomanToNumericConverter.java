@@ -48,9 +48,9 @@ public class RomanToNumericConverter {
     }
 
     private static void validateRomanValue(String romanValue, String k) {
-        if (k.length() == 2 && StringUtils.countMatches(k, romanValue) > 1)
+        if (k.length() == 2 && StringUtils.countMatches(romanValue, k) > 1)
             throw new NotARomanNumberException();
-        if (k.length() == 1 && romanValue.length()>4 && StringUtils.countMatches(k, romanValue.substring(0,4)) > 3)
+        if (k.length() == 1 && romanValue.length()>=4 && StringUtils.countMatches(romanValue.substring(0,4), k) > 3)
             throw new NotARomanNumberException();
     }
 
